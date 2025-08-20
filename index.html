@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UGIV.UK</title>
+  <style>
+    :root {
+      --bg-1:#1a0b13;--bg-2:#28101c;--txt:#ffe6f2;--muted:#f5b6d2;
+      --brand:#ff4da6;--brand-2:#ffb6d9;--border:#402536;
+      --radius:18px;--shadow:0 12px 30px rgba(0,0,0,.35);--maxw:1200px
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{
+      background:
+        radial-gradient(1000px 600px at 20% -10%, color-mix(in oklab,var(--brand) 18%, transparent), transparent),
+        radial-gradient(900px 500px at 80% -15%, color-mix(in oklab,var(--brand-2) 18%, transparent), transparent),
+        var(--bg-1);
+      color:var(--txt);
+      font-family:system-ui,sans-serif;
+      scroll-behavior:smooth
+    }
+    .container{max-width:var(--maxw);margin-inline:auto;padding:0 20px}
+    .topbar{position:sticky;top:0;background:color-mix(in oklab,var(--bg-2) 92%, transparent);border-bottom:1px solid var(--border);backdrop-filter:blur(10px);z-index:40}
+    .nav{display:flex;justify-content:center;align-items:center;padding:14px 0}
+    .brand-text{
+      font-size:1.8rem;
+      font-weight:900;
+      background:linear-gradient(to right, #fff, var(--brand));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      text-shadow:0 0 8px rgba(255,255,255,0.6),0 0 16px rgba(255,192,203,0.4);
+    }
+    .intro{padding:100px 0 60px;text-align:center;opacity:0;transform:translateY(30px);animation:fadeIn 1.5s forwards}
+    .intro h1{
+      font-size:clamp(3rem,2.5rem+3vw,4.5rem);
+      font-weight:900;
+      background:linear-gradient(to right, #fff, var(--brand));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      text-shadow:0 0 8px rgba(255,255,255,0.6),0 0 16px rgba(255,192,203,0.4);
+    }
+    section{padding:80px 0;opacity:0;transform:translateY(40px);animation:fadeIn 1.5s forwards;animation-delay:.6s}
+    h2{font-size:clamp(1.6rem,1.2rem+1.5vw,2.3rem);margin-bottom:14px;text-align:center}
+    p{margin-bottom:12px;line-height:1.6;text-align:center}
+    footer{border-top:1px solid var(--border);background:#140912;padding:28px 0;color:var(--muted);text-align:center}
+    .card{padding:20px;border-radius:var(--radius);margin:10px 0;text-align:center}
+    .tos-box{border:1px solid var(--brand);border-radius:var(--radius);background:color-mix(in oklab,var(--bg-2) 92%, transparent);padding:20px;box-shadow:var(--shadow);}
+    @keyframes fadeIn{to{opacity:1;transform:translateY(0)}}
+    a{color:var(--brand);text-decoration:none;font-weight:bold}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--radius);box-shadow:var(--shadow);cursor:pointer}
+  </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+.social-icon {
+  font-size:2rem;
+  color:#fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 12px #ff4da6, 0 0 24px #ff4da6;
+  border-radius:50%;
+}
+</style>
+
+
+<style>
+@media (max-width: 640px) {
+  .social-icon {
+    font-size: 2.5rem;
+  }
+}
+</style>
+
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <div class="brand-text">UGIV.UK</div>
+  </div>
+</header>
+
+<main>
+  <!-- Intro -->
+  <div class="intro">
+    <div class="container">
+      <h1>Welcome to @ugiv website</h1>
+      <p>Here you will see different sections of what I provide with the highest level of quality and professionalism.</p>
+    </div>
+  </div>
+
+  <!-- Terms -->
+  <section>
+    <div class="container tos-box">
+      <h2>Terms of Service</h2>
+      <p>Once you purchased a service from me, there are no refunds, and it is your responsibility to secure it even though every account I provide will have OGe access and PDF downloadable for Epic and PS. Once you purchased any of my services or account, you automatically agree to my terms of service.</p>
+      <p style="font-size:0.9rem;color:var(--muted);margin-top:10px;">*IMPORTANT TO READ*</p>
+    </div>
+  </section>
+
+  <!-- Design Service -->
+  <section>
+    <div class="container">
+      <h2>Design Service</h2>
+      <p><b>Profile cover - 3</b><br><b>Highlight cover - 3</b><br><b>Story shop with icons - 4</b><br><b>Background for console or social platform e.g YouTube - 6</b></p>
+    </div>
+  </section>
+
+  <!-- Crew Service -->
+  <section>
+    <div class="container">
+      <h2>Crew Service</h2>
+      <p>Do you want your crew to have its own custom emblem? Choose which one you would like to purchase!</p>
+      <p><b>Your own custom emblem upload - 3</b><br><b>Custom emblem with a text added - 5</b><br><b>Custom emblem upload - 6</b><br><b>Custom emblem with text + border + upload - 12</b></p>
+    </div>
+  </section>
+
+  <!-- In Stock -->
+  <section>
+    <div class="container">
+      <h2>In Stock</h2>
+      <a href="PAGE2.html">
+        <img src="your-image.jpg" alt="Stock Item">
+      </a>
+      <p>Click the picture to view full details</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <small>© <span id="year"></span> UGIV.UK</small>
+
+<div style="margin-top:30px; text-align:center;">
+  <a href="https://www.instagram.com/ugiv" target="_blank">
+    <i class="fab fa-instagram social-icon"></i>
+  </a>
+  <a href="https://youtube.com/@slilyx" target="_blank" style="margin-left:30px;">
+    <i class="fab fa-youtube social-icon"></i>
+  </a>
+</div>
+
+</footer>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
