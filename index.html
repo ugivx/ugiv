@@ -4,6 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>UGIV.UK</title>
+  <meta name="description" content="UGIV.UK – High-quality design and crew services for personal and gaming needs." />
+  <meta name="author" content="UGIV" />
+
+  <!-- Enforce HTTPS -->
+  <script>
+    if(location.protocol !== 'https:'){
+        location.href = 'https://' + location.hostname + location.pathname + location.search;
+    }
+  </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     :root {
       --bg-1:#1a0b13;--bg-2:#28101c;--txt:#ffe6f2;--muted:#f5b6d2;
@@ -24,20 +37,16 @@
     .topbar{position:sticky;top:0;background:color-mix(in oklab,var(--bg-2) 92%, transparent);border-bottom:1px solid var(--border);backdrop-filter:blur(10px);z-index:40}
     .nav{display:flex;justify-content:center;align-items:center;padding:14px 0}
     .brand-text{
-      font-size:1.8rem;
-      font-weight:900;
+      font-size:1.8rem;font-weight:900;
       background:linear-gradient(to right, #fff, var(--brand));
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;
       text-shadow:0 0 8px rgba(255,255,255,0.6),0 0 16px rgba(255,192,203,0.4);
     }
     .intro{padding:100px 0 60px;text-align:center;opacity:0;transform:translateY(30px);animation:fadeIn 1.5s forwards}
     .intro h1{
-      font-size:clamp(3rem,2.5rem+3vw,4.5rem);
-      font-weight:900;
+      font-size:clamp(3rem,2.5rem+3vw,4.5rem);font-weight:900;
       background:linear-gradient(to right, #fff, var(--brand));
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;
       text-shadow:0 0 8px rgba(255,255,255,0.6),0 0 16px rgba(255,192,203,0.4);
     }
     section{padding:80px 0;opacity:0;transform:translateY(40px);animation:fadeIn 1.5s forwards;animation-delay:.6s}
@@ -51,36 +60,12 @@
     a:hover{text-decoration:underline}
     img{max-width:100%;border-radius:var(--radius);box-shadow:var(--shadow);cursor:pointer}
 
-    /* Social icons */
-    .social-icon {
-      font-size:2rem;
-      color:#fff;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .social-icon:hover {
-      transform: scale(1.2);
-      box-shadow: 0 0 12px #ff4da6, 0 0 24px #ff4da6;
-      border-radius:50%;
-    }
-    @media (max-width: 640px) {
-      .social-icon { font-size: 2.5rem; }
-    }
+    .social-icon { font-size:2rem;color:#fff;transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .social-icon:hover { transform: scale(1.2); box-shadow: 0 0 12px #ff4da6, 0 0 24px #ff4da6; border-radius:50%; }
+    @media (max-width: 640px) { .social-icon { font-size: 2.5rem; } }
 
-    /* Price badges */
-    .price {
-      display: inline-block;
-      margin-left: 8px;
-      padding: 2px 10px;
-      border-radius: 12px;
-      background: var(--brand);
-      color: #fff;
-      font-size: 0.9rem;
-      font-weight: bold;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    }
+    .price { display:inline-block;margin-left:8px;padding:2px 10px;border-radius:12px;background:var(--brand);color:#fff;font-size:0.9rem;font-weight:bold;box-shadow:0 2px 6px rgba(0,0,0,0.3); }
   </style>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 <header class="topbar">
@@ -90,7 +75,6 @@
 </header>
 
 <main>
-  <!-- Intro -->
   <div class="intro">
     <div class="container">
       <h1>Welcome to @ugiv website</h1>
@@ -98,7 +82,6 @@
     </div>
   </div>
 
-  <!-- Terms -->
   <section>
     <div class="container tos-box">
       <h2>Terms of Service</h2>
@@ -107,7 +90,6 @@
     </div>
   </section>
 
-  <!-- Design Service -->
   <section>
     <div class="container">
       <h2>Design Service</h2>
@@ -121,7 +103,6 @@
     </div>
   </section>
 
-  <!-- Crew Service -->
   <section>
     <div class="container">
       <h2>Crew Service</h2>
@@ -135,7 +116,6 @@
     </div>
   </section>
 
-  <!-- In Stock -->
   <section>
     <div class="container">
       <h2>In Stock</h2>
@@ -150,14 +130,9 @@
 
 <footer>
   <small>© <span id="year"></span> UGIV.UK</small>
-
   <div style="margin-top:30px; text-align:center;">
-    <a href="https://www.instagram.com/ugiv" target="_blank">
-      <i class="fab fa-instagram social-icon"></i>
-    </a>
-    <a href="https://youtube.com/@slilyx" target="_blank" style="margin-left:30px;">
-      <i class="fab fa-youtube social-icon"></i>
-    </a>
+    <a href="https://www.instagram.com/ugiv" target="_blank"><i class="fab fa-instagram social-icon"></i></a>
+    <a href="https://youtube.com/@slilyx" target="_blank" style="margin-left:30px;"><i class="fab fa-youtube social-icon"></i></a>
   </div>
 </footer>
 
