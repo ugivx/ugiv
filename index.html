@@ -50,31 +50,37 @@
     a{color:var(--brand);text-decoration:none;font-weight:bold}
     a:hover{text-decoration:underline}
     img{max-width:100%;border-radius:var(--radius);box-shadow:var(--shadow);cursor:pointer}
+
+    /* Social icons */
+    .social-icon {
+      font-size:2rem;
+      color:#fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .social-icon:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 12px #ff4da6, 0 0 24px #ff4da6;
+      border-radius:50%;
+    }
+    @media (max-width: 640px) {
+      .social-icon { font-size: 2.5rem; }
+    }
+
+    /* Price badges */
+    .price {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 2px 10px;
+      border-radius: 12px;
+      background: var(--brand);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
   </style>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<style>
-.social-icon {
-  font-size:2rem;
-  color:#fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.social-icon:hover {
-  transform: scale(1.2);
-  box-shadow: 0 0 12px #ff4da6, 0 0 24px #ff4da6;
-  border-radius:50%;
-}
-</style>
-
-
-<style>
-@media (max-width: 640px) {
-  .social-icon {
-    font-size: 2.5rem;
-  }
-}
-</style>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 <header class="topbar">
@@ -88,7 +94,7 @@
   <div class="intro">
     <div class="container">
       <h1>Welcome to @ugiv website</h1>
-      <p>Here you will see different sections of what I provide with the highest level of quality and professionalism.</p>
+      <p>Explore our services and products, crafted with the highest level of quality and professionalism for your personal or gaming needs.</p>
     </div>
   </div>
 
@@ -96,7 +102,7 @@
   <section>
     <div class="container tos-box">
       <h2>Terms of Service</h2>
-      <p>Once you purchased a service from me, there are no refunds, and it is your responsibility to secure it even though every account I provide will have OGe access and PDF downloadable for Epic and PS. Once you purchased any of my services or account, you automatically agree to my terms of service.</p>
+      <p>Once you purchase a service from us, there are no refunds. It is your responsibility to secure any account provided, though every account will include OGe access and downloadable PDFs for Epic and PS. By purchasing, you automatically agree to our Terms of Service.</p>
       <p style="font-size:0.9rem;color:var(--muted);margin-top:10px;">*IMPORTANT TO READ*</p>
     </div>
   </section>
@@ -105,7 +111,13 @@
   <section>
     <div class="container">
       <h2>Design Service</h2>
-      <p><b>Profile cover - 3</b><br><b>Highlight cover - 3</b><br><b>Story shop with icons - 4</b><br><b>Background for console or social platform e.g YouTube - 6</b></p>
+      <p>Do you want to make your page look more attractive and professional to people? Whether it's for gaming or personal use, a high-quality design page is always the best!</p>
+      <p>
+        <b>Profile Cover</b> <span class="price">3</span><br>
+        <b>Highlight Cover</b> <span class="price">3</span><br>
+        <b>Story Shop with Icons</b> <span class="price">4</span><br>
+        <b>Background for Console or Social Platform (e.g., YouTube)</b> <span class="price">6</span>
+      </p>
     </div>
   </section>
 
@@ -113,8 +125,13 @@
   <section>
     <div class="container">
       <h2>Crew Service</h2>
-      <p>Do you want your crew to have its own custom emblem? Choose which one you would like to purchase!</p>
-      <p><b>Your own custom emblem upload - 3</b><br><b>Custom emblem with a text added - 5</b><br><b>Custom emblem upload - 6</b><br><b>Custom emblem with text + border + upload - 12</b></p>
+      <p>Do you want your crew to have its own custom emblem? Choose which option works best for you!</p>
+      <p>
+        <b>Custom Emblem Upload</b> <span class="price">3</span><br>
+        <b>Custom Emblem with Text</b> <span class="price">5</span><br>
+        <b>Custom Emblem Upload (Advanced)</b> <span class="price">6</span><br>
+        <b>Custom Emblem with Text + Border + Upload</b> <span class="price">12</span>
+      </p>
     </div>
   </section>
 
@@ -122,10 +139,11 @@
   <section>
     <div class="container">
       <h2>In Stock</h2>
+      <p>Browse the latest items currently available for purchase.</p>
       <a href="PAGE2.html">
         <img src="your-image.jpg" alt="Stock Item">
       </a>
-      <p>Click the picture to view full details</p>
+      <p>Click the image above to view full details of available items.</p>
     </div>
   </section>
 </main>
@@ -133,19 +151,18 @@
 <footer>
   <small>© <span id="year"></span> UGIV.UK</small>
 
-<div style="margin-top:30px; text-align:center;">
-  <a href="https://www.instagram.com/ugiv" target="_blank">
-    <i class="fab fa-instagram social-icon"></i>
-  </a>
-  <a href="https://youtube.com/@slilyx" target="_blank" style="margin-left:30px;">
-    <i class="fab fa-youtube social-icon"></i>
-  </a>
-</div>
-
+  <div style="margin-top:30px; text-align:center;">
+    <a href="https://www.instagram.com/ugiv" target="_blank">
+      <i class="fab fa-instagram social-icon"></i>
+    </a>
+    <a href="https://youtube.com/@slilyx" target="_blank" style="margin-left:30px;">
+      <i class="fab fa-youtube social-icon"></i>
+    </a>
+  </div>
 </footer>
 
 <script>
-document.getElementById("year").textContent=new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
